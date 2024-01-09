@@ -7,7 +7,7 @@ part 'save_avatar_dto.freezed.dart';
 @Freezed(fromJson: false,toJson: true)
 class SaveAvatarRequestDTO with _$SaveAvatarRequestDTO {
   factory SaveAvatarRequestDTO({
-    @JsonKey(name: 'userId')  required String userID,
+    required String userId,
     required String avatar,
   }) = _SaveAvatarRequestDTO;
 

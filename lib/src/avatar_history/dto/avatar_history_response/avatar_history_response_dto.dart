@@ -7,7 +7,7 @@ part 'avatar_history_response_dto.freezed.dart';
 @Freezed(toJson: false)
 class AvatarHistoryResponseDTO with _$AvatarHistoryResponseDTO {
   factory AvatarHistoryResponseDTO({
-    @JsonKey(name: 'userId') required String userID,
+    required String userId,
     required List<String> avatars,
   }) = _AvatarHistoryResponseDTO;
 
