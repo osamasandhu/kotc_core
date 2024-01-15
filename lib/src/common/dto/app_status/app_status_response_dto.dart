@@ -3,18 +3,16 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'app_status_response_dto.g.dart';
 part 'app_status_response_dto.freezed.dart';
 
-
-
 @Freezed(toJson: false)
 class AppStatusResponseDTO with _$AppStatusResponseDTO {
   factory AppStatusResponseDTO({
     required String message,
     required int status,
     required String appstore_version,
-    required bool in_review,
     required String playstore_version,
-    bool? is_restricted_screen_shot,
     String? screenshot_restricted_until,
+    required bool in_review,
+    bool? is_restricted_screen_shot,
     bool? adaptive_qbank,
     bool? boolean_blitz,
     bool? endless_mode,

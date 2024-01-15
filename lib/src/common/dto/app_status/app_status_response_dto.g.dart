@@ -12,11 +12,11 @@ _$AppStatusResponseDTOImpl _$$AppStatusResponseDTOImplFromJson(
       message: json['message'] as String,
       status: json['status'] as int,
       appstore_version: json['appstore_version'] as String,
-      in_review: json['in_review'] as bool,
       playstore_version: json['playstore_version'] as String,
-      is_restricted_screen_shot: json['is_restricted_screen_shot'] as bool?,
       screenshot_restricted_until:
           json['screenshot_restricted_until'] as String?,
+      in_review: json['in_review'] as bool,
+      is_restricted_screen_shot: json['is_restricted_screen_shot'] as bool?,
       adaptive_qbank: json['adaptive_qbank'] as bool?,
       boolean_blitz: json['boolean_blitz'] as bool?,
       endless_mode: json['endless_mode'] as bool?,

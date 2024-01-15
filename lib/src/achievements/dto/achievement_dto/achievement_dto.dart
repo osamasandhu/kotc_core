@@ -9,9 +9,9 @@ class AchievementDTO with _$AchievementDTO {
   factory AchievementDTO({
     required String id,
     required String name,
-    required bool status,
     required String description,
     required double progress,
+    required bool status,
   }) = _AchievementDTO;
 
   factory AchievementDTO.fromJson(json) =>

@@ -23,10 +23,10 @@ mixin _$AppStatusResponseDTO {
   String get message => throw _privateConstructorUsedError;
   int get status => throw _privateConstructorUsedError;
   String get appstore_version => throw _privateConstructorUsedError;
-  bool get in_review => throw _privateConstructorUsedError;
   String get playstore_version => throw _privateConstructorUsedError;
-  bool? get is_restricted_screen_shot => throw _privateConstructorUsedError;
   String? get screenshot_restricted_until => throw _privateConstructorUsedError;
+  bool get in_review => throw _privateConstructorUsedError;
+  bool? get is_restricted_screen_shot => throw _privateConstructorUsedError;
   bool? get adaptive_qbank => throw _privateConstructorUsedError;
   bool? get boolean_blitz => throw _privateConstructorUsedError;
   bool? get endless_mode => throw _privateConstructorUsedError;
@@ -59,10 +59,10 @@ abstract class $AppStatusResponseDTOCopyWith<$Res> {
       {String message,
       int status,
       String appstore_version,
-      bool in_review,
       String playstore_version,
-      bool? is_restricted_screen_shot,
       String? screenshot_restricted_until,
+      bool in_review,
+      bool? is_restricted_screen_shot,
       bool? adaptive_qbank,
       bool? boolean_blitz,
       bool? endless_mode,
@@ -97,10 +97,10 @@ class _$AppStatusResponseDTOCopyWithImpl<$Res,
     Object? message = null,
     Object? status = null,
     Object? appstore_version = null,
-    Object? in_review = null,
     Object? playstore_version = null,
-    Object? is_restricted_screen_shot = freezed,
     Object? screenshot_restricted_until = freezed,
+    Object? in_review = null,
+    Object? is_restricted_screen_shot = freezed,
     Object? adaptive_qbank = freezed,
     Object? boolean_blitz = freezed,
     Object? endless_mode = freezed,
@@ -130,22 +130,22 @@ class _$AppStatusResponseDTOCopyWithImpl<$Res,
           ? _value.appstore_version
           : appstore_version // ignore: cast_nullable_to_non_nullable
               as String,
-      in_review: null == in_review
-          ? _value.in_review
-          : in_review // ignore: cast_nullable_to_non_nullable
-              as bool,
       playstore_version: null == playstore_version
           ? _value.playstore_version
           : playstore_version // ignore: cast_nullable_to_non_nullable
               as String,
-      is_restricted_screen_shot: freezed == is_restricted_screen_shot
-          ? _value.is_restricted_screen_shot
-          : is_restricted_screen_shot // ignore: cast_nullable_to_non_nullable
-              as bool?,
       screenshot_restricted_until: freezed == screenshot_restricted_until
           ? _value.screenshot_restricted_until
           : screenshot_restricted_until // ignore: cast_nullable_to_non_nullable
               as String?,
+      in_review: null == in_review
+          ? _value.in_review
+          : in_review // ignore: cast_nullable_to_non_nullable
+              as bool,
+      is_restricted_screen_shot: freezed == is_restricted_screen_shot
+          ? _value.is_restricted_screen_shot
+          : is_restricted_screen_shot // ignore: cast_nullable_to_non_nullable
+              as bool?,
       adaptive_qbank: freezed == adaptive_qbank
           ? _value.adaptive_qbank
           : adaptive_qbank // ignore: cast_nullable_to_non_nullable
@@ -223,10 +223,10 @@ abstract class _$$AppStatusResponseDTOImplCopyWith<$Res>
       {String message,
       int status,
       String appstore_version,
-      bool in_review,
       String playstore_version,
-      bool? is_restricted_screen_shot,
       String? screenshot_restricted_until,
+      bool in_review,
+      bool? is_restricted_screen_shot,
       bool? adaptive_qbank,
       bool? boolean_blitz,
       bool? endless_mode,
@@ -258,10 +258,10 @@ class __$$AppStatusResponseDTOImplCopyWithImpl<$Res>
     Object? message = null,
     Object? status = null,
     Object? appstore_version = null,
-    Object? in_review = null,
     Object? playstore_version = null,
-    Object? is_restricted_screen_shot = freezed,
     Object? screenshot_restricted_until = freezed,
+    Object? in_review = null,
+    Object? is_restricted_screen_shot = freezed,
     Object? adaptive_qbank = freezed,
     Object? boolean_blitz = freezed,
     Object? endless_mode = freezed,
@@ -291,22 +291,22 @@ class __$$AppStatusResponseDTOImplCopyWithImpl<$Res>
           ? _value.appstore_version
           : appstore_version // ignore: cast_nullable_to_non_nullable
               as String,
-      in_review: null == in_review
-          ? _value.in_review
-          : in_review // ignore: cast_nullable_to_non_nullable
-              as bool,
       playstore_version: null == playstore_version
           ? _value.playstore_version
           : playstore_version // ignore: cast_nullable_to_non_nullable
               as String,
-      is_restricted_screen_shot: freezed == is_restricted_screen_shot
-          ? _value.is_restricted_screen_shot
-          : is_restricted_screen_shot // ignore: cast_nullable_to_non_nullable
-              as bool?,
       screenshot_restricted_until: freezed == screenshot_restricted_until
           ? _value.screenshot_restricted_until
           : screenshot_restricted_until // ignore: cast_nullable_to_non_nullable
               as String?,
+      in_review: null == in_review
+          ? _value.in_review
+          : in_review // ignore: cast_nullable_to_non_nullable
+              as bool,
+      is_restricted_screen_shot: freezed == is_restricted_screen_shot
+          ? _value.is_restricted_screen_shot
+          : is_restricted_screen_shot // ignore: cast_nullable_to_non_nullable
+              as bool?,
       adaptive_qbank: freezed == adaptive_qbank
           ? _value.adaptive_qbank
           : adaptive_qbank // ignore: cast_nullable_to_non_nullable
@@ -379,10 +379,10 @@ class _$AppStatusResponseDTOImpl implements _AppStatusResponseDTO {
       {required this.message,
       required this.status,
       required this.appstore_version,
-      required this.in_review,
       required this.playstore_version,
-      this.is_restricted_screen_shot,
       this.screenshot_restricted_until,
+      required this.in_review,
+      this.is_restricted_screen_shot,
       this.adaptive_qbank,
       this.boolean_blitz,
       this.endless_mode,
@@ -409,13 +409,13 @@ class _$AppStatusResponseDTOImpl implements _AppStatusResponseDTO {
   @override
   final String appstore_version;
   @override
-  final bool in_review;
-  @override
   final String playstore_version;
   @override
-  final bool? is_restricted_screen_shot;
-  @override
   final String? screenshot_restricted_until;
+  @override
+  final bool in_review;
+  @override
+  final bool? is_restricted_screen_shot;
   @override
   final bool? adaptive_qbank;
   @override
@@ -449,7 +449,7 @@ class _$AppStatusResponseDTOImpl implements _AppStatusResponseDTO {
 
   @override
   String toString() {
-    return 'AppStatusResponseDTO(message: $message, status: $status, appstore_version: $appstore_version, in_review: $in_review, playstore_version: $playstore_version, is_restricted_screen_shot: $is_restricted_screen_shot, screenshot_restricted_until: $screenshot_restricted_until, adaptive_qbank: $adaptive_qbank, boolean_blitz: $boolean_blitz, endless_mode: $endless_mode, flashcards: $flashcards, multiplayer: $multiplayer, passage_mode: $passage_mode, question_of_the_day: $question_of_the_day, quiz_game_mode: $quiz_game_mode, review_mode: $review_mode, shutdown_entire_app: $shutdown_entire_app, shutBool: $shutBool, shutdown_multiple_choice_questions: $shutdown_multiple_choice_questions, shutdown_passage_questions: $shutdown_passage_questions, shutdown_questions: $shutdown_questions, timed_mode: $timed_mode)';
+    return 'AppStatusResponseDTO(message: $message, status: $status, appstore_version: $appstore_version, playstore_version: $playstore_version, screenshot_restricted_until: $screenshot_restricted_until, in_review: $in_review, is_restricted_screen_shot: $is_restricted_screen_shot, adaptive_qbank: $adaptive_qbank, boolean_blitz: $boolean_blitz, endless_mode: $endless_mode, flashcards: $flashcards, multiplayer: $multiplayer, passage_mode: $passage_mode, question_of_the_day: $question_of_the_day, quiz_game_mode: $quiz_game_mode, review_mode: $review_mode, shutdown_entire_app: $shutdown_entire_app, shutBool: $shutBool, shutdown_multiple_choice_questions: $shutdown_multiple_choice_questions, shutdown_passage_questions: $shutdown_passage_questions, shutdown_questions: $shutdown_questions, timed_mode: $timed_mode)';
   }
 
   @override
@@ -461,16 +461,16 @@ class _$AppStatusResponseDTOImpl implements _AppStatusResponseDTO {
             (identical(other.status, status) || other.status == status) &&
             (identical(other.appstore_version, appstore_version) ||
                 other.appstore_version == appstore_version) &&
-            (identical(other.in_review, in_review) ||
-                other.in_review == in_review) &&
             (identical(other.playstore_version, playstore_version) ||
                 other.playstore_version == playstore_version) &&
-            (identical(other.is_restricted_screen_shot, is_restricted_screen_shot) ||
-                other.is_restricted_screen_shot == is_restricted_screen_shot) &&
             (identical(other.screenshot_restricted_until,
                     screenshot_restricted_until) ||
                 other.screenshot_restricted_until ==
                     screenshot_restricted_until) &&
+            (identical(other.in_review, in_review) ||
+                other.in_review == in_review) &&
+            (identical(other.is_restricted_screen_shot, is_restricted_screen_shot) ||
+                other.is_restricted_screen_shot == is_restricted_screen_shot) &&
             (identical(other.adaptive_qbank, adaptive_qbank) ||
                 other.adaptive_qbank == adaptive_qbank) &&
             (identical(other.boolean_blitz, boolean_blitz) ||
@@ -513,10 +513,10 @@ class _$AppStatusResponseDTOImpl implements _AppStatusResponseDTO {
         message,
         status,
         appstore_version,
-        in_review,
         playstore_version,
-        is_restricted_screen_shot,
         screenshot_restricted_until,
+        in_review,
+        is_restricted_screen_shot,
         adaptive_qbank,
         boolean_blitz,
         endless_mode,
@@ -548,10 +548,10 @@ abstract class _AppStatusResponseDTO implements AppStatusResponseDTO {
       {required final String message,
       required final int status,
       required final String appstore_version,
-      required final bool in_review,
       required final String playstore_version,
-      final bool? is_restricted_screen_shot,
       final String? screenshot_restricted_until,
+      required final bool in_review,
+      final bool? is_restricted_screen_shot,
       final bool? adaptive_qbank,
       final bool? boolean_blitz,
       final bool? endless_mode,
@@ -578,13 +578,13 @@ abstract class _AppStatusResponseDTO implements AppStatusResponseDTO {
   @override
   String get appstore_version;
   @override
-  bool get in_review;
-  @override
   String get playstore_version;
   @override
-  bool? get is_restricted_screen_shot;
-  @override
   String? get screenshot_restricted_until;
+  @override
+  bool get in_review;
+  @override
+  bool? get is_restricted_screen_shot;
   @override
   bool? get adaptive_qbank;
   @override

@@ -5,7 +5,7 @@ import 'package:kotc_core/src/common/dto/account_deletion/account_deletion_reque
 import 'package:kotc_core/src/common/dto/account_deletion/account_deletion_response.dart';
 import 'package:kotc_core/src/common/dto/app_status/app_status_response_dto.dart';
 import 'package:kotc_core/src/common/dto/generate_token/generate_token_request_dto.dart';
-import 'package:kotc_core/src/common/dto/generate_token/generate_token_response.dart';
+import 'package:kotc_core/src/common/dto/generate_token/generate_token_response_dto.dart';
 import 'package:kotc_core/src/common/dto/pop_up_response/pop_up_response.dart';
 import 'package:kotc_core/src/common/dto/redeem_code_response/redeem_code_response_dto.dart';
 import 'package:kotc_core/src/common/dto/review_requests/review_requests.dart';

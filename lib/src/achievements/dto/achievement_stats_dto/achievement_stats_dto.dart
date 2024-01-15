@@ -10,8 +10,8 @@ class AchievementsStatsDTO with _$AchievementsStatsDTO {
     required String dateTime,
     required String category,
     required String questionId,
-    required bool isCorrect,
     required String subCategory,
+    required bool isCorrect,
   }) = _AchievementsStatsDTO;
 
   factory AchievementsStatsDTO.fromJson(json) =>
